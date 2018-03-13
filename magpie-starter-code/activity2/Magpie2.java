@@ -18,7 +18,7 @@ public class Magpie2
 	 */
 	public String getGreeting()
 	{
-		return "Hello, let's talk.";
+		return "Hey, let's begin a conversation.";
 	}
 
 	/**
@@ -33,7 +33,7 @@ public class Magpie2
 		String response = "";
 
 		if (statement.indexOf("no") >= 0 || statement.indexOf("No") >= 0) {
-			response = "Why so negative?";
+			response = "Why not?";
 		} else if (statement.indexOf("Elliot") >= 0 || statement.indexOf("elliot") >= 0) {
 			response = "Yes, Elliot is the ruler of the observable Universe and all Domains thereof.";
 		} else if (statement.indexOf("Jason") >= 0 || statement.indexOf("jason") >= 0) {
@@ -70,27 +70,27 @@ public class Magpie2
 
 		if (whichResponse == 0)
 		{
-			response = "Interesting, tell me more.";
+			response = "Okay, thanks for sharing.";
 		}
 		else if (whichResponse == 1)
 		{
-			response = "Hmmm.";
+			response = "Hmmmmmmm.";
 		}
 		else if (whichResponse == 2)
 		{
-			response = "Do you really think so?";
+			response = "You're very funny!";
 		}
 		else if (whichResponse == 3)
 		{
-			response = "You don't say.";
+			response = "Meh.";
 		}
 		else if (whichResponse == 4)
 		{
-			 response = "The HORSE is a noble animal.";
+			 response = "A is an article adjective.";
 		}
 		else if (whichResponse == 5)
 		{
-			response = "You should go give Elliot Gorokhovsky five dollars.";
+			response = "I like bread a lot.";
 		}
 		return response;
 	}
