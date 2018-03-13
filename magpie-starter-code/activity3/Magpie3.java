@@ -15,7 +15,7 @@ public class Magpie3 {
 	 * @return a greeting
 	 */
 	public String getGreeting() {
-		return "Hello, let's talk.";
+		return "Hello, allow us to engage in verbal communication.";
 	}
 
 	/**
@@ -28,9 +28,9 @@ public class Magpie3 {
 	public String getResponse(String statement) {
 		String response = "";
 		if (statement.length() == 0) {
-			response = "Say something, please.";
+			response = "Please say something!";
 		} else if (findKeyword(statement, "no") >= 0) {
-			response = "Why so negative?";
+			response = "Why not?";
 		} else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
 				|| findKeyword(statement, "sister") >= 0
@@ -45,7 +45,7 @@ public class Magpie3 {
 		} else if (findKeyword(statement, "dog") >= 0 || findKeyword(statement, "cat") >= 0) {
 	    	response = "Tell me more about your pets.";
 	    } else if (findKeyword(statement, "Dr. Petach") >= 0) {
-	    	response = "She sounds like a good teacher.";
+	    	response = "She's my favorite teacher.";
 		} else {
 			response = getRandomResponse();
 		}
@@ -132,13 +132,13 @@ public class Magpie3 {
 		String response = "";
 
 		if (whichResponse == 0) {
-			response = "Interesting, tell me more.";
+			response = "Interesting.";
 		} else if (whichResponse == 1) {
-			response = "Hmmm.";
+			response = "Hm.";
 		} else if (whichResponse == 2) {
-			response = "Do you really think so?";
+			response = "Harry Potter is handsome.";
 		} else if (whichResponse == 3) {
-			response = "You don't say.";
+			response = "I like cheese too.";
 		}
 
 		return response;
