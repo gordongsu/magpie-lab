@@ -16,7 +16,7 @@ public class Magpie4 {
 	 * @return a greeting
 	 */
 	public String getGreeting() {
-		return "Hello, let's talk.";
+		return "Greetings; please allow us to participate in some conversation.";
 	}
 
 	/**
@@ -97,7 +97,7 @@ public class Magpie4 {
 		}
 		int psn = findKeyword (statement, "I want", 0);
 		String restOfStatement = statement.substring(psn + 6).trim();
-		return "Would you really be happy if you had " + restOfStatement + "?";
+		return "Would you be very happy if you had " + restOfStatement + "?";
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class Magpie4 {
 		int psnOfMe = findKeyword (statement, "me", psnOfYou + 3);
 
 		String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe).trim();
-		return "What makes you think that I " + restOfStatement + " you?";
+		return "Really? what makes you think that I " + restOfStatement + " you?";
 	}
 
 	/**
@@ -214,13 +214,13 @@ public class Magpie4 {
 		String response = "";
 
 		if (whichResponse == 0) {
-			response = "Interesting, tell me more.";
+			response = "Interesting.";
 		} else if (whichResponse == 1) {
-			response = "Hmmm.";
+			response = "Hmmmmmmmmmmmmm.";
 		} else if (whichResponse == 2) {
-			response = "Do you really think so?";
+			response = "Meh.";
 		} else if (whichResponse == 3) {
-			response = "You don't say.";
+			response = "I enjoy art.";
 		}
 
 		return response;
