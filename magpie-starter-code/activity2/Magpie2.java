@@ -18,7 +18,7 @@ public class Magpie2
 	 */
 	public String getGreeting()
 	{
-		return "Hey.";
+		return "Hey, let's start a conversation.";
 	}
 
 	/**
@@ -70,27 +70,27 @@ public class Magpie2
 
 		if (whichResponse == 0)
 		{
-			response = "Interesting, tell me more.";
+			response = "Interesting!";
 		}
 		else if (whichResponse == 1)
 		{
-			response = "Hmmm.";
+			response = "Hmmmmmmmm.";
 		}
 		else if (whichResponse == 2)
 		{
-			response = "Do you really think so?";
+			response = "Nice.";
 		}
 		else if (whichResponse == 3)
 		{
-			response = "You don't say.";
+			response = "I like bread.";
 		}
 		else if (whichResponse == 4)
 		{
-			 response = "The HORSE is a noble animal.";
+			 response = "Your feet are smelly.";
 		}
 		else if (whichResponse == 5)
 		{
-			response = "You should go give Elliot Gorokhovsky five dollars.";
+			response = "Really?";
 		}
 		return response;
 	}
