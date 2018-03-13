@@ -20,7 +20,7 @@ public class Magpie5
 	 */
 	public String getGreeting()
 	{
-		return "Hello, let's talk.";
+		return "Hi. Talk to me.";
 	}
 
 	/**
@@ -35,19 +35,19 @@ public class Magpie5
 		String response = "";
 		if (statement.length() == 0)
 		{
-			response = "Say something, please.";
+			response = "Please say something, dawg.";
 		}
 
 		else if (findKeyword(statement, "no") >= 0)
 		{
-			response = "Why so negative?";
+			response = "Why not, bro?";
 		}
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
 				|| findKeyword(statement, "sister") >= 0
 				|| findKeyword(statement, "brother") >= 0)
 		{
-			response = "Tell me more about your family.";
+			response = "Give me the deets on your family.";
 		}
 		else if (findKeyword(statement, "song name") >= 0) {
 			response = "Darude - Sandstorm";
@@ -116,7 +116,7 @@ public class Magpie5
 		}
 		int psn = findKeyword (statement, "I want to", 0);
 		String restOfStatement = statement.substring(psn + 9).trim();
-		return "What would it mean to " + restOfStatement + "?";
+		return "What does it mean to " + restOfStatement + "?";
 	}
 
 
@@ -139,7 +139,7 @@ public class Magpie5
 		}
 		int psn = findKeyword (statement, "I want", 0);
 		String restOfStatement = statement.substring(psn + 6).trim();
-		return "Would you really be happy if you had " + restOfStatement + "?";
+		return "Really? You would be happy if you had " + restOfStatement + "?";
 	}
 
 	/**
@@ -263,14 +263,15 @@ public class Magpie5
 	}
 
 	private String [] randomResponses = {
-		"Interesting, tell me more",
-		"Hmmm.",
-		"Do you really think so?",
-		"You don't say.",
+		"Music is my passion.",
+		"Can I get back to you?",
+		"Meh.",
+		"I like blue as well.",
+		"What was that?",
 		"I WILL EAT YOUR RABBITS.",
-		"wat",
+		"what",
 		"Could you repeat that?",
-		"Why are you talking to me anyway?",
+		"Please don't say that",
 		"YOUR POULTRY WILL BE MINE."
 	};
 
