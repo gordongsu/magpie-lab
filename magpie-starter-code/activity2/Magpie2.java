@@ -33,11 +33,11 @@ public class Magpie2
 		String response = "";
 
 		if (statement.indexOf("no") >= 0 || statement.indexOf("No") >= 0) {
-			response = "Why so negative?";
+			response = "Why not?";
 		} else if (statement.indexOf("Elliot") >= 0 || statement.indexOf("elliot") >= 0) {
-			response = "Yes, Elliot is the ruler of the observable Universe and all Domains thereof.";
+			response = "Yes, Elliot is great.";
 		} else if (statement.indexOf("Jason") >= 0 || statement.indexOf("jason") >= 0) {
-			response = "Jason should have added the keywords himself so that he would get something cool said about him. But he didn't!";
+			response = "Jason should be doing his homework.";
 		} else if (statement.indexOf("Sun") >= 0 || statement.indexOf("sun") >= 0) {
 			response = "The sun is very hot.";
 		} else if (statement.indexOf("mother") >= 0
